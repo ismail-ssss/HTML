@@ -5,14 +5,17 @@
     <style>
       label {
         display: inline-block;
-        width: 100px;
+        width: 150px;
         margin-left: 25px;
         margin-top: 8px;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
       }
       input {
-        font-size: 18px;
+        font-size: 16px;
+      }
+      select {
+        font-size: 16px;
       }
     </style>
   </head>
@@ -45,17 +48,22 @@
 
         <input type="password" placeholder="Enter The password" />
         <br />
-        <label for="radio">Radio</label>
-        <input type="radio" name="gender" />
-        <input type="radio" name="gender" />
-        <input type="radio" name="gender" />
-        <input type="radio" name="gender" />
+        <label for="radio">Gender</label>
+        Man<input type="radio" name="gender" placeholder="man" /> Woman<input
+          type="radio"
+          name="gender"
+        />
+        Other<input type="radio" name="gender" />
         <br />
-        <label for="checkbox">Checkbox</label>
-        <input type="checkbox" name="gender" />
-        <input type="checkbox" name="gender" />
-        <input type="checkbox" name="gender" />
-        <input type="checkbox" name="gender" />
+        <label for="checkbox">Fevorite Game</label>
+        Cricket<input type="checkbox" name="gender" /> Volleyball<input
+          type="checkbox"
+          name="gender"
+        />
+        Kabaddi<input type="checkbox" name="gender" /> Skating<input
+          type="checkbox"
+          name="gender"
+        />
         <br />
         <label for="date">Date</label>
         <input type="date" />
@@ -71,6 +79,21 @@
         <br />
         <label for="file">File</label>
         <input type="file" />
+        <br />
+        <label for="">Country:</label>
+        <select name="Country" size="1">
+          <option selected="selected">Please select Country</option>
+        </select>
+        <br />
+        <label for="">State:</label>
+        <select name="state" size="1">
+          <option selected="selected">Please select state</option>
+        </select>
+        <br />
+        <label for="">District/City:</label>
+        <select name="District" size="1">
+          <option selected="selected">Please select District/City</option>
+        </select>
         <br />
         <label for="button">Button</label>
         <input type="button" value="Button" />
