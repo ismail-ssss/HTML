@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Form</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 100px;
+        margin-left: 25px;
+        margin-top: 8px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      input {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">HTML FORM</h1>
+    <div style="border: 2px black solid">
+      <!-- form -->
+      <form faction="">
+        <label for="fname">First Name </label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter The First Name"
+        />
+        <br />
+        <label for="lname">Last Name</label>
+
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Enter The Last Name"
+        />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter The Email" />
+        <br />
+        <label for="password">Password</label>
+
+        <input type="password" placeholder="Enter The password" />
+        <br />
+        <label for="radio">Radio</label>
+        <input type="radio" name="gender" />
+        <input type="radio" name="gender" />
+        <input type="radio" name="gender" />
+        <input type="radio" name="gender" />
+        <br />
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" name="gender" />
+        <input type="checkbox" name="gender" />
+        <input type="checkbox" name="gender" />
+        <input type="checkbox" name="gender" />
+        <br />
+        <label for="date">Date</label>
+        <input type="date" />
+        <br />
+        <label for="time">Time</label>
+        <input type="time" />
+        <br />
+        <label for="color">color</label>
+        <input type="color" />
+        <br />
+        <label for="range">Range</label>
+        <input type="range" />
+        <br />
+        <label for="file">File</label>
+        <input type="file" />
+        <br />
+        <label for="button">Button</label>
+        <input type="button" value="Button" />
+        <br />
+        <label for="submit">Submit</label>
+        <input type="submit" id="submit_btn" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
