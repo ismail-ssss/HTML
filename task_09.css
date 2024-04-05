@@ -1,0 +1,12 @@
+div {
+  border: 5px white solid;
+  margin-top: 60px;
+  margin-left: 380px;
+  width: 450px;
+  height: 450px;
+  padding: 25px;
+}
+h1 {
+  color: aqua;
+  text-align: center;
+}
