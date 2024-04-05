@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <style>
+      label {
+        font-size: 22px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding: 25px">
+      <h1>A Survey Form</h1>
+      <p>
+        Thank you for participating in our survey. Your feedback is valuable to
+        us. Please take a few minutes to answer the following questions.
+      </p>
+      <form action="task_10.1.html">
+        <!-- radio -->
+        <fieldset>
+          <legend>Radio</legend>
+          <label for="radio">What is your Age group?</label>
+          <br />
+          <input type="radio" name="age_group" />18-24
+          <br />
+          <input type="radio" name="age_group" />35-34
+          <br />
+          <input type="radio" name="age_group" />35-44
+          <br />
+          <input type="radio" name="age_group" />45-54
+          <br />
+          <input type="radio" name="age_group" />55+
+          <br />
+          <br />
+          <label for="radio">How did you hear about our service?</label>
+          <br />
+          <input type="radio" name="hear" />Social Media
+          <br />
+          <input type="radio" name="hear" />Word of Mouth
+          <br />
+          <input type="radio" name="hear" />Online Advertisement
+          <br />
+          <input type="radio" name="hear" />Search Engine
+          <br />
+          <input type="radio" name="hear" />Other
+          <br />
+          <br />
+
+          <!-- rating -->
+          <label for="radio"
+            >On a scale of 1 to 5, How satisfied are you with our customer
+            service?</label
+          >
+          <br />
+          <input type="radio" name="rating" />1
+          <br />
+          <input type="radio" name="rating" />2
+          <br />
+          <input type="radio" name="rating" />3
+          <br />
+          <input type="radio" name="rating" />4
+          <br />
+          <input type="radio" name="rating" />5
+          <br />
+          <br />
+
+          <!-- radio buttons -->
+          <label for="radio">How often do you use our service?</label>
+          <br />
+          <input type="radio" name="rating" />Daily
+          <br />
+          <input type="radio" name="rating" />Weekly
+          <br />
+          <input type="radio" name="rating" />Monthly
+          <br />
+          <input type="radio" name="rating" />Occasionally
+          <br />
+          <input type="radio" name="rating" />Never
+        </fieldset>
+        <br />
+        <br />
+
+        <!-- checkbox -->
+        <fieldset>
+          <legend>Checkbox</legend>
+          <label for="checkbox"
+            >Which of the following language do you know?</label
+          >
+          <br />
+          <input type="checkbox" name="feature" />HTML
+          <br />
+          <input type="checkbox" name="feature" />CSS
+          <br />
+          <input type="checkbox" name="feature" />JAVA
+          <br />
+          <input type="checkbox" name="feature" />PYTHON
+          <br />
+          <input type="checkbox" name="feature" />SQL
+        </fieldset>
+        <br />
+        <br />
+
+        <!-- text input field -->
+        <fieldset>
+          <legend>Text input field</legend>
+          <label for="input"
+            >Please share any aditional suggestions you have:</label
+          >
+          <br />
+          <input type="text" placeholder="suggest here..." />
+        </fieldset>
+        <br />
+        <br />
+
+        <!-- <textarea> -->
+        <fieldset>
+          <legend>Textarea</legend>
+          <label for="textarea"
+            >Describe your experience with our service?</label
+          >
+          <br />
+          <textarea
+            cols="30"
+            rows="5"
+            placeholder="Describe here..."
+          ></textarea>
+        </fieldset>
+        <br />
+        <br />
+
+        <!-- drop_down menu -->
+        <fieldset>
+          <legend>dropdown menus</legend>
+          <label for="drop_down_list"
+            >Which department do you interact with the most?</label
+          >
+          <br />
+          <select name="drop_down_list">
+            <option value="sales">Sales</option>
+            <option value="customer_support">Customer support</option>
+            <option value="Marketing">Marketing</option>
+            <option value="technical_support">Technical support</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+        <br />
+        <br />
+
+        <!-- submin button -->
+        <input type="submit" />
+        <p>
+          Thank you for taking the time to complete our survey! your feedback
+          helps us improve our service.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
