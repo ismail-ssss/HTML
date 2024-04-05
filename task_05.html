@@ -1,33 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Attributes of HTML elements</title>
+    <title>HTML Form</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 150px;
+        margin-left: 25px;
+        margin-top: 8px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+      input {
+        font-size: 16px;
+      }
+      select {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Attributes</h1>
-    <p title="about Attributes">
-      All elements have Attributes, Attributes provide additional information
-      about elements, like : name="valur",
-    </p>
-    <img
-      title="this is ultimez company logo"
-      src="ultimezlogo.jpg"
-      alt="Error"
-      height="100px"
-    />
-    <div>
-      <div style="background-color: red; width: 33%; float: left" id="div1">
-        1
-      </div>
-      <div style="background-color: blue; width: 33%; float: right" id="div2">
-        3
-      </div>
-      <div
-        style="background-color: yellow; width: 33%; margin: 0 auto"
-        id="div3"
-      >
-        2
-      </div>
+    <h1 style="text-align: center">HTML FORM</h1>
+    <div style="border: 2px black solid">
+      <!-- form -->
+      <form faction="">
+        <label for="fname">First Name </label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter The First Name"
+        />
+        <br />
+        <label for="lname">Last Name</label>
+
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Enter The Last Name"
+        />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter The Email" />
+        <br />
+        <label for="password">Password</label>
+
+        <input type="password" placeholder="Enter The password" />
+        <br />
+        <label for="radio">Gender</label>
+        Man<input type="radio" name="gender" placeholder="man" /> Woman<input
+          type="radio"
+          name="gender"
+        />
+        Other<input type="radio" name="gender" />
+        <br />
+        <label for="checkbox">Fevorite Game</label>
+        Cricket<input type="checkbox" name="gender" /> Volleyball<input
+          type="checkbox"
+          name="gender"
+        />
+        Kabaddi<input type="checkbox" name="gender" /> Skating<input
+          type="checkbox"
+          name="gender"
+        />
+        <br />
+        <label for="date">Date</label>
+        <input type="date" />
+        <br />
+        <label for="time">Time</label>
+        <input type="time" />
+        <br />
+        <label for="color">color</label>
+        <input type="color" />
+        <br />
+        <label for="range">Range</label>
+        <input type="range" />
+        <br />
+        <label for="file">File</label>
+        <input type="file" />
+        <br />
+        <label for="">Country:</label>
+        <select name="Country" size="1">
+          <option selected="selected">Please select Country</option>
+        </select>
+        <br />
+        <label for="">State:</label>
+        <select name="state" size="1">
+          <option selected="selected">Please select state</option>
+        </select>
+        <br />
+        <label for="">District/City:</label>
+        <select name="District" size="1">
+          <option selected="selected">Please select District/City</option>
+        </select>
+        <br />
+        <label for="button">Button</label>
+        <input type="button" value="Button" />
+        <br />
+        <label for="submit">Submit</label>
+        <input type="submit" id="submit_btn" value="Submit" />
+      </form>
     </div>
   </body>
 </html>
