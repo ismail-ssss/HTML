@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>background image and border</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        margin: 20px;
+        text-transform: uppercase;
+      }
+      #box {
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid red;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+      }
+      .box1 {
+        padding: 8px;
+        width: 31%;
+        margin: 5px;
+        border: dotted;
+        border-width: thick;
+        border-color: black;
+      }
+      .box2 {
+        padding: 8px;
+        margin: 5px;
+        width: 31%;
+        border: solid;
+        border-width: 5px 10px;
+        border-color: chocolate;
+      }
+      .box3 {
+        padding: 8px;
+        width: 31%;
+        margin: 5px;
+        border: dashed;
+        border-width: 5px 10px 15px 20px;
+        border-color: orange red blue green;
+      }
+      .box4 {
+        padding: 8px;
+        margin: 5px;
+        width: 31%;
+        border-style: inset;
+        border-color: red;
+        border-width: 20px;
+      }
+      .box5 {
+        padding: 8px;
+        margin: 5px;
+        width: 31%;
+        border-style: ridge;
+        border-color: red;
+        border-width: 20px;
+      }
+      .box6 {
+        padding: 8px;
+        margin: 5px;
+        border: groove;
+        border-color: red;
+        border-width: 20px;
+        width: 31%;
+        background-image: url(dehli.jpg);
+        background-size: cover;
+      }
+      .box7 {
+        padding: 8px;
+        margin: 5px;
+        width: 31%;
+        border: solid;
+        border-color: black;
+        background-image: url(img1.jpg);
+        background-size: 100px;
+      }
+      .box8 {
+        padding: 8px;
+        margin: 5px;
+        width: 31%;
+        border: solid;
+        border-color: black;
+        background-image: url(img2.jpg);
+        background-size: 100px;
+      }
+      .box9 {
+        padding: 8px;
+        margin: 5px;
+        width: 31%;
+        border: solid;
+        border-color: black;
+        background-image: url(img3.jpg);
+        background-size: 100px;
+      }
+      .colorh2-1 {
+        border-left: 120px solid orange;
+        border-right: 110px solid orange;
+        padding: 0px 0px 0px 20px;
+      }
+      .para {
+        border-left: 5px solid green;
+        padding: 0px 0px 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>background image and border using CSS</h1>
+    <div id="box">
+      <div class="box1">
+        <h2>heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+      <div class="box2">
+        <h2>heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+      <div class="box3">
+        <h2>heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+    </div>
+    <div id="box">
+      <div class="box4">
+        <h2>heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+      <div class="box5">
+        <h2>heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+      <div class="box6">
+        <h2>heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+    </div>
+    <div id="box">
+      <div class="box7">
+        <h2 class="colorh2-1">heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+      <div class="box8">
+        <h2 class="colorh2-2">heading</h2>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+      <div class="box9">
+        <h2 class="colorh2-3">heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint earum
+          deleniti aperiam, modi voluptates error dolor iure placeat assumenda
+          doloribus maxime quis ipsam illum repellendus? Inventore officiis
+          minus enim quae?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
