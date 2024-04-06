@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Selectors</title>
+    <style>
+      /* element selector */
+      h1 {
+        background: linear-gradient(135deg, blue, orange);
+        color: white;
+      }
+      /* id selector */
+      #ss {
+        font-style: italic;
+      }
+
+      /* gruping and class selector */
+      .Types_of_ss,
+      .Types_of_cs {
+        font-style: italic;
+        font-size: 22px;
+      }
+      /* universal selector */
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      /* Descendant Selector */
+      ul li {
+        text-decoration: underline;
+      }
+
+      /* attribute selector */
+      input[type="text"] {
+        border: 3px solid orange;
+      }
+
+      /* pseudo-class selector */
+      #pcs form:first-child {
+        color: orange;
+      }
+
+      .d1 {
+        width: 20%;
+        float: right;
+        color: blue;
+      }
+      .d2 {
+        width: 20%;
+        float: right;
+        color: green;
+      }
+      .d3 {
+        width: 20%;
+        float: right;
+        color: chocolate;
+      }
+      .d4 {
+        width: 20%;
+        color: red;
+        float: right;
+      }
+      .d4:hover {
+        font-size: 25px;
+      }
+      .d3:hover {
+        font-size: 25px;
+      }
+      .d2:hover {
+        font-size: 25px;
+      }
+      .d1:hover {
+        font-size: 25px;
+      }
+
+      /* Pseudo-element selecotor */
+      #pes-ul li::first-letter {
+        font-size: 25px;
+        color: chocolate;
+      }
+      #pes-ul p::first-line {
+        font-size: 25px;
+        color: chocolate;
+      }
+      #pes-ul li::selection{
+        background: red;
+        color: white;
+      }
+      ::placeholder{
+        color: brown;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Types of selectors in CSS</h1>
+    <fieldset>
+      <h2>Simple Selectors</h2>
+      <ul id="ss">
+        <li class="Types_of_ss">Element Selector</li>
+        <li class="Types_of_ss">Id Selector</li>
+        <li class="Types_of_ss">Class Selector</li>
+        <li class="Types_of_ss">Universal Selector</li>
+        <li class="Types_of_ss">Grouping Selector</li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <h2>Conbinator Selectors</h2>
+      <ul id="cs">
+        <li class="Types_of_cs">Descendant Selector</li>
+        <li class="Types_of_cs">Child Selector</li>
+        <li class="Types_of_cs">Adjacent Sibling Selector</li>
+        <li class="Types_of_cs">General Sibling Selector</li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <h2>Attribute Selectors</h2>
+      <form>
+        First name: <input type="text" /><br /><br />
+        Last name:<input type="text" /><br /><br />
+        Email: <input type="email" />
+      </form>
+    </fieldset>
+    <fieldset>
+      <h2 id="pcs">Pseudo-class Selectors</h2>
+      <div>
+        <div class="d1">
+          <ul>
+            <li>:link</li>
+            <li>:hover</li>
+            <li>:visited</li>
+            <li>action</li>
+            <li>:target</li>
+          </ul>
+        </div>
+        <div class="d2">
+          <ul>
+            <li>:first-child</li>
+            <li>:last-child</li>
+            <li>:nth-child()</li>
+            <li>:nth-last-of-type()</li>
+            <li>:nth-of-type()</li>
+            <li>:only-child</li>
+            <li>:only-of-type</li>
+            <li>:first-of-type</li>
+            <li>:empty</li>
+            <li>:not()</li>
+            <li>:long()</li>
+          </ul>
+        </div>
+        <div class="d3">
+          <ul>
+            <li>:focus</li>
+            <li>:checked</li>
+            <li>:disabled</li>
+            <li>:enabled</li>
+            <li>:required</li>
+            <li>:optional</li>
+            <li>:in-range</li>
+            <li>:out-of-range</li>
+            <li>:read-only</li>
+            <li>:read-write</li>
+            <li>:valid</li>
+            <li>:invalid</li>
+            <li>:default</li>
+          </ul>
+        </div>
+        <div class="d4">
+          <ul>
+            <li>:root</li>
+          </ul>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <h2 id="pes">Pseudo-element Selectors</h2>
+      <ul id="pes-ul">
+        <li>::First letter selector</li>
+        <li>::First line selector
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+          numquam nesciunt quidem, officiis laborum necessitatibus quos
+          reiciendis. Enim, facere error ex iusto aspernatur, optio hic nemo
+          unde possimus dolores recusandae.
+        </p>
+        <li>::selection it will change color ofter selection</li>
+        <li>::placehonder</li> <input type="text" placeholder="enter your name">
+        <li>::after</li>
+        <li>::before</li>
+      </ul>
+      </ul>
+    </fieldset>
+    <h2></h2>
+  </body>
+</html>
