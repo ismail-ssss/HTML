@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Webpage Layout</title>
+    <style>
+      /* Reset default margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Header styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      /* Navigation styles */
+      nav {
+        background-color: #444;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Content area styles */
+      main {
+        padding: 20px;
+      }
+      p {
+        font-size: 22px;
+      }
+      img {
+        width: 100%;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h1>CSS Box Model</h1>
+        <p>
+          Every semantic element has box model. The CSS Box model defines how
+          elements are rendered and how their dimensions are calculated. It
+          describes the structure of an element as a rectangular box that has
+          content, padding, a border, and a margin. The box model consists of
+          four main components, which are
+        </p>
+
+        <h2>1. Content</h2>
+        <p>
+          The innermost component of the box model is the actual content of the
+          element. It can be text, image, video, etc. The content area is
+          defined by the width and height properties.
+        </p>
+        <h2>2. Padding</h2>
+        <p>
+          The space between the actual content and the border of the element is
+          the padding. The padding area is defined by the property padding. For
+          more details, follow the CSS Padding tutorial.
+        </p>
+        <h2>3. Border</h2>
+        <p>
+          The border surrounds the content and padding and gives the visual
+          border of the element. The border properties can be controlled using
+          the border keyword. For more details, follow the CSS Borders tutorial.
+        </p>
+        <h2>4. Margin</h2>
+        <p>
+          The margin is the space outside the element that separates it from
+          other elements in the layout. The margin of the element is controlled
+          by the margin property. For more details, follow the CSS Margin
+          tutorial.
+        </p>
+        <br />
+        <p>The CSS Box model can be visually represented as:</p>
+        <img src="box model.png" alt="this is box model" />
+      </section>
+    </main>
+    <footer>
+      <p>Footer &copy; 2024</p>
+    </footer>
+  </body>
+</html>
