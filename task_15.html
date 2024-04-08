@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table</title>
+    <link rel="stylesheet" href="task_15.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>HEADER</h2>
+    </div>
+
+    <!-- sidebarMenu  -->
+    <div id="sidebarMenu">
+      <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    <!-- main  -->
+    <div class="main">
+      <h1>Header, Side bar, footer and table</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        explicabo accusantium voluptatum nisi officiis! Possimus sunt iusto
+        vitae error, culpa provident, eveniet velit nisi perferendis voluptatum
+        in. Eum, accusamus odio.
+      </p>
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Michael Johnson</td>
+            <td>35</td>
+            <td>UK</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">PopUp</button>
+        <div class="popup" id="popup">
+          <img src="logo1.png" />
+          <h2>Thank You!</h2>
+          <p>PopUp has been successfully done. Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <h2>FOOTER</h2>
+    </footer>
+
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+  </body>
+</html>
