@@ -15,8 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4527a0;
-  padding: 0 25px;
+  background: linear-gradient(160deg, #003aaa, #012093, #00047a);
   transition: 0.3s;
 }
 
@@ -26,7 +25,7 @@ body {
 
 .logo a img {
   display: block;
-  width: 10%;
+  width: 75%;
 }
 
 .navigation {
@@ -49,27 +48,25 @@ body {
 }
 
 .menu li a {
+  display: block;
   color: #fff;
   text-decoration: none;
-  display: block;
-  padding: 20px 25px;
+  padding: 20px 10px;
   width: max-content;
   font-size: 18px;
   line-height: 1;
   transition: 0.3s;
 }
 /* dropdown ............................................  */
-.menu li ul.dropdown li {
-  display: block;
-}
+
 .menu li ul.dropdown {
   width: max-content;
-  background: #4527a0;
+  background: linear-gradient(160deg, #003aaa, #012093, #00047a);
   position: absolute;
   z-index: 999;
   display: none;
 }
-.menu li:hover ul.dropdown {
+.menu li:hover > ul.dropdown {
   display: block;
 }
 ul.dropdown li a {
@@ -81,17 +78,18 @@ ul.dropdown li a {
 }
 
 /* sub dropdown .........................................*/
-.sub_dropdown li {
-  display: block;
+
+.menu li ul.sub_dropdown li {
+  display: none;
+  top: auto;
+  right: 100%;
+  width: max-content;
+  background: linear-gradient(160deg, #003aaa, #012093, #00047a);
+  position: absolute;
 }
 
-.menu li ul.sub_dropdown {
-  width: max-content;
-  left: 100%;
-  width: max-content;
-  top: 0;
-  background: #4527a0;
-  position: absolute;
+ul.dropdown li:hover > .sub_dropdown li {
+  display: block;
 }
 
 /* side :checked bar................................ */
@@ -189,4 +187,91 @@ ul.dropdown li a {
     font-size: 24px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   }
+}
+
+.imageOverflow1 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 10px;
+  display: inline-block;
+}
+.imageOverflow2 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: visible;
+  margin: 10px;
+  display: inline-block;
+}
+.imageOverflow3 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: scroll;
+  margin: 50px;
+  display: inline-block;
+}
+.imageOverflow4 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: auto;
+  margin: 10px;
+  display: inline-block;
+}
+.imageOverflow5 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: auto;
+  margin: 10px;
+  display: inline-block;
+}
+.imageOverflow6 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: scroll;
+  margin: 10px;
+  display: inline-block;
+}
+.imageOverflow7 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 10px;
+  display: inline-block;
+}
+.imageOverflow8 {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  overflow: visible;
+  margin: 10px;
+  display: block;
+}
+
+.inline {
+  display: inline;
+  margin: 30px;
+  border: 1px solid black;
+  background: yellow;
+}
+.block {
+  display: block;
+  margin: 30px;
+  border: 1px solid black;
+  background: yellow;
+  height: 50px;
+}
+.inline-block {
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  margin: 30px;
+  border: 1px solid black;
+  background: yellow;
 }
