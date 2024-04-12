@@ -57,6 +57,7 @@ body {
   line-height: 1;
   transition: 0.3s;
 }
+
 /* dropdown ............................................  */
 
 .menu li ul.dropdown {
@@ -81,7 +82,7 @@ ul.dropdown li a {
 
 .menu li ul.sub_dropdown li {
   display: none;
-  top: auto;
+  top: 0;
   right: 100%;
   width: max-content;
   background: linear-gradient(160deg, #003aaa, #012093, #00047a);
@@ -172,7 +173,7 @@ ul.dropdown li:hover > .sub_dropdown li {
     position: fixed;
     top: 0;
     right: -300px;
-    background: #4527a0;
+    background: linear-gradient(160deg, #003aaa, #012093, #00047a);
     width: 300px;
     height: 100%;
     padding-top: 65px;
