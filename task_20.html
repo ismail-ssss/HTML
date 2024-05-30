@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript 4</title>
+  </head>
+  <body>
+    Write Something <input type="text" id="writeSomething" />
+    <button id="submitBtn">Submit</button>
+    <div id="result"></div>
+    <script>
+      const submitBtn = document.getElementById("submitBtn");
+
+      submitBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const writeSomething = document.getElementById("writeSomething").value;
+        let occurrences = writeSomething.match(new RegExp("a", "g"));
+        let count = occurrences ? occurrences.length : 0;
+        document.getElementById("result").innerHTML =
+          "Length : " +
+          writeSomething.length +
+          "<br />" +
+          "Lowe Case : " +
+          writeSomething.toLowerCase() +
+          "<br />" +
+          "Upper Case : " +
+          writeSomething.toUpperCase() +
+          "<br />" +
+          "Is contain JavaScript : " +
+          writeSomething.includes("JavaScript") +
+          "<br />" +
+          "number of a" +
+          count +
+          "<br />";
+      });
+    </script>
+  </body>
+</html>

@@ -10,8 +10,10 @@
       <label for="birthYear">Birth Year:</label>
       <input type="number" id="birthYear" placeholder="birthYear" />
       <br />
+      <br />
       <label for="currentYear">Current Year:</label>
       <input type="number" id="currentYear" placeholder="currentYear" />
+      <br />
       <br />
       <button id="submit">Calculate Age</button>
     </form>
@@ -30,8 +32,25 @@
 
         e.preventDefault();
         const age = currentYear - birthYear;
-        document.getElementById("result").textContent = age;
+        document.getElementById(
+          "result"
+        ).textContent = `You are ${age} years old`;
       });
+
+      function calcAge(byear, cyear) {
+        const age = cyear - byear;
+        console.log("Your are ", age, " years old");
+      }
+      calcAge(1997, 2024);
+      calcAge(2000, 1995);
+      calcAge(1995, "2024");
+      calcAge("1995", 2024);
+      calcAge("abcd", "xyz");
+      //  Your are  27  years old
+      //  Your are  -5  years old
+      //  Your are  29  years old
+      //  Your are  29  years old
+      //  Your are  NaN  years old
     </script>
   </body>
 </html>
