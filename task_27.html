@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 10</title>
+  </head>
+  <body>
+    <button type="button" onclick="calculate(5, 5, result)">start</button>
+    <p id="demo"></p>
+    <script>
+      const demo = document.getElementById("demo");
+      function calculate(num1, num2, operation) {
+        const result = num1 + num2;
+        operation(result);
+      }
+      function result(e) {
+        demo.textContent = e;
+      }
+    </script>
+  </body>
+</html>
