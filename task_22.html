@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript 5</title>
+  </head>
+  <body>
+    <script>
+      const names = ["John", "Jane", "Doe", "Alice", "Bob"];
+      names.push("Eve");
+      document.write(names.join("<br />") + "<br /><br />");
+      // John
+      // Jane
+      // Doe
+      // Alice
+      // Bob
+      // Eve
+      names.splice(2, 1);
+      document.write(names + "<br /><br />");
+      //John,Jane,Alice,Bob,Eve
+      names.sort();
+      document.write(names + "<br /><br />");
+      //Alice,Bob,Eve,Jane,John
+      if (names.indexOf("Alice") == -1) {
+        document.write("Alice Does not Exist<br /><br />");
+      } else {
+        document.write("Alice Exist<br /><br />");
+      }
+      //Alice Exist
+      const upperCaseNames = names.map((name) => name.toUpperCase());
+      document.write(upperCaseNames);
+      //   ALICE,BOB,EVE,JANE,JOHN
+    </script>
+  </body>
+</html>
