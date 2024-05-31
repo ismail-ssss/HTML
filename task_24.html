@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript 7</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Dates</h1><br>");
+      const date = new Date();
+      document.write(date + "<br>");
+      const specificDate = new Date("2024-04-15T12:00:00");
+      document.write(specificDate + "<br>");
+      const milliSeconds = new Date(1619743440000);
+      document.write(milliSeconds + "<br>");
+
+      const year = date.getFullYear();
+      const month = date.getMonth();
+      const day = date.getDay();
+      const hours = date.getHours();
+      const minuts = date.getMinutes();
+      const seconds = date.getSeconds();
+
+      document.write(
+        year,
+        "<br>",
+        month,
+        "<br>",
+        day,
+        "<br>",
+        hours,
+        "<br>",
+        minuts,
+        "<br>",
+        seconds
+      );
+
+      const formattedDate = date.toLocaleDateString("en-us");
+      document.write(formattedDate + "<br>");
+
+      const date3 = date.setDate(date.getDate() + 7, "<br>");
+      document.write(date3 + "<br>");
+
+      const date1 = new Date("2024-04-29");
+      const date2 = new Date("2024-05-05");
+      if (date1 < date2) {
+        document.write("date 1 is earlier then date 2<br><br><br>");
+      }
+
+      document.write("<h1>Regex</h1><br>");
+      let patter = /dog/;
+      string = "I have a dog and a cat";
+      document.write(patter.test(string), "<br>");
+
+      let patter1 = /\b[cC]\w+/g;
+      string1 = "Cate and dog an animals. Cow is the another animal.";
+      document.write(string1.match(patter1), "<br>");
+
+      let patter2 = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      string2 = "ibhattipuri@gmail.com";
+      document.write(patter2.test(string2), "<br>");
+    </script>
+  </body>
+</html>
