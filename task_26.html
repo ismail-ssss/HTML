@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 9</title>
+  </head>
+  <body>
+    <h2>Functions</h2>
+    <input type="text" id="writeSomething" placeholder="writeSomething" />
+    <p id="demo"></p>
+    <button type="button" onclick="reverseString()">Click me</button>
+    <script>
+      function reverseString(str) {
+        let demo = document.getElementById("demo");
+        let writeSomething = document.getElementById("writeSomething").value;
+        const reversedString = writeSomething.split("").reverse().join("");
+        demo.textContent = reversedString;
+      }
+    </script>
+  </body>
+</html>
