@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript 8</title>
+  </head>
+  <body>
+    <script>
+      a = 10;
+      if (a == 10) {
+        document.write("the value of a is 10<br>");
+      }
+      b = 20;
+      if (a < b) {
+        document.write("a less then b<br>");
+      } else {
+        document.write("a not less then b<br>");
+      }
+      c = 30;
+      if (a > b) {
+        document.write("a is greater<br>");
+      } else if (a > c) {
+        document.write("b is greate<br>");
+      } else {
+        document.write("c is greater<br>");
+      }
+
+      day = "Monday";
+      switch (day) {
+        case "Monday":
+          document.write("Today is Monday<br>");
+          break;
+        case "Tuesday":
+          document.write("Today is Monday<br>");
+          break;
+        case "Wednesday":
+          document.write("Today is Monday<br>");
+          break;
+        case "Thursday":
+          document.write("Today is Monday<br>");
+          break;
+        case "Friday":
+          document.write("Today is Monday<br>");
+          break;
+        case "Saturday":
+          document.write("Today is Monday<br>");
+          break;
+        case "Sonday":
+          document.write("Today is Monday<br>");
+          break;
+      }
+
+      //loops
+      for (let i = 0; i < 5; i++) {
+        document.write(i, "<br>");
+      }
+
+      const obj = {
+        Name: "Ismail",
+        LastName: "Bhattipuri",
+        Occupation: "Student",
+      };
+
+      for (const key in obj) {
+        document.write(key + " : " + obj[key] + "<br>");
+      }
+
+      const colors = ["red", "green", "blue", "orange", "yellow"];
+      for (const eachColor of colors) {
+        document.write(eachColor + "<br>");
+      }
+
+      let count = 1;
+      while (count < 4) {
+        document.write(count + "<br>");
+        count++;
+      }
+      let count1 = 0;
+      do {
+        document.write(count1 + "<br>");
+        count1++;
+      } while (count1 < 3);
+    </script>
+  </body>
+</html>
