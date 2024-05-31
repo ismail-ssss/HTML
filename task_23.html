@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 6</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        Name: "Ismail",
+        Age: 27,
+        Gender: "male",
+        Occupation: "Intern",
+      };
+
+      let person1 = {
+        Name: "Chetan",
+        Age: 24,
+        Gender: "male",
+        Occupation: "Student",
+      };
+
+      let person2 = {
+        Name: "Iqra",
+        Age: 30,
+        Gender: "female",
+        Occupation: "Intern",
+      };
+
+      {
+        // Display properties of person
+        document.write("Person :<br />");
+        document.write("Name: " + person.Name + "<br />");
+        document.write("Age: " + person.Age + "<br />");
+        document.write("Gender: " + person.Gender + "<br />");
+        document.write("Occupation: " + person.Occupation + "<br /><br />");
+
+        // Display properties of person1
+        document.write("Person 1:<br />");
+        document.write("Name: " + person1.Name + "<br />");
+        document.write("Age: " + person1.Age + "<br />");
+        document.write("Gender: " + person1.Gender + "<br />");
+        document.write("Occupation: " + person1.Occupation + "<br /><br />");
+
+        // Display properties of person2
+        document.write("Person 2:<br />");
+        document.write("Name: " + person2.Name + "<br />");
+        document.write("Age: " + person2.Age + "<br />");
+        document.write("Gender: " + person2.Gender + "<br />");
+        document.write("Occupation: " + person2.Occupation + "<br />");
+      }
+
+      const numbersArray = [1, 2, 3, 4, 5, 2, 3, 4, 1];
+      function uniqueSet(numbersArray) {
+        return new Set(numbersArray);
+      }
+      const uniqueNumbersSet = uniqueSet(numbersArray);
+      console.log(uniqueNumbersSet);
+
+      function union(setA, setB) {
+        return new Set([...setA, ...setB]);
+      }
+
+      function intersection(setA, setB) {
+        return new Set([...setA].filter((x) => setB.has(x)));
+      }
+
+      function difference(setA, setB) {
+        return new Set([...setA].filter((x) => !setB.has(x)));
+      }
+
+      // Example usage:
+      const set1 = new Set([1, 2, 3, 4, 5]);
+      const set2 = new Set([3, 4, 5, 6, 7]);
+
+      console.log("Union:", union(set1, set2));
+      // 1, 2, 3, 4, 5, 6, 7
+      console.log("Intersection:", intersection(set1, set2));
+      // 3, 4, 5
+      console.log("Difference (set1 - set2):", difference(set1, set2));
+      // 1, 2
+      console.log("Difference (set2 - set1):", difference(set2, set1));
+      //  6, 7
+
+      function isSubset(subset, superset) {
+        return [...subset].every((elem) => superset.has(elem));
+      }
+
+      const setA = new Set([1, 2, 3]);
+      const setB = new Set([1, 2, 3, 4, 5]);
+      const setC = new Set([4, 5, 6]);
+
+      console.log(isSubset(setA, setB));
+      // setA is a subset of setB true
+      console.log(isSubset(setC, setB));
+      // setC is a subset of setB false
+      console.log(isSubset(setA, setC));
+      // setA is not a subset of setC false
+
+      let myMap = new Map([
+        ["name", "Ismail"],
+        ["age", 27],
+        ["gender", "male"],
+        ["occupation", "Engineer"],
+      ]);
+
+      console.log("Initial Map:", myMap);
+
+      console.log("Name:", myMap.get("name"));
+      console.log("Age:", myMap.get("age"));
+      console.log("Gender:", myMap.get("gender"));
+      console.log("Occupation:", myMap.get("occupation"));
+
+      // Update
+      myMap.set("age", 28);
+      myMap.set("occupation", "Software Developer");
+
+      console.log("Updated Map:", myMap);
+      console.log("Updated Age:", myMap.get("age"));
+      console.log("Updated Occupation:", myMap.get("occupation"));
+
+      // Delete
+      myMap.delete("gender");
+
+      console.log("Map after deletion:", myMap);
+      console.log("Has gender key:", myMap.has("gender"));
+    </script>
+  </body>
+</html>
