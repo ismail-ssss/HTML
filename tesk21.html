@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript 5</title>
+  </head>
+  <body>
+    <script>
+      const name = [10, 5, 8, 3, 12, 6];
+      document.write(name + "<br>");
+      document.write("Length of the array: " + name.length + "<br>");
+      name.push(7);
+      document.write(name + "<br>");
+      name.shift(name);
+      document.write(name + "<br>");
+      name.sort((a, b) => a - b);
+      document.write(name + "<br>");
+      name.reverse();
+      document.write(name + "<br>");
+      if (name.includes(8)) {
+        document.write("8 exists" + "<br>");
+      } else {
+        document.write("8 does not exist" + "<br>");
+      }
+      const index = name.indexOf(12);
+      document.write(index + "<br>");
+    </script>
+  </body>
+</html>
